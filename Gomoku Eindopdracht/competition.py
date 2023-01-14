@@ -4,6 +4,10 @@ import gomoku
 from random_agent import random_dummy_player
 from gomoku_ai_marius1_webclient import gomoku_ai_marius1_webclient
 from gomoku_ai_random_webclient import gomoku_ai_random_webclient
+from latest_gmPlayer import basePlayer
+from random_test_1 import random_test_player1
+from random_test_2 import random_test_player2
+from testPlayer import testPlayer
 import random
 import time
 
@@ -43,6 +47,7 @@ class Competition:
                 self.players[i].new_game(True)  # player i is black
                 self.players[j].new_game(False)  # player j is white
                 game = gomoku.starting_state(bsize_=self.bsize)  # initialise the game
+                
                 previous_move = ()
                 over = False
                 while not over:
@@ -68,8 +73,9 @@ class Competition:
                     )  # perform the move, and obtain whether the move was valid (ok) and whether the move results in a win
                     previous_move = move
                     # Uncomment the follwing two lines if you want to watch the games unfold slowly:
-                    # time.sleep(1)
+                    # time.sleep(.1)
                     # gomoku.pretty_board(game[0])
+                    # print()
                     if (stop_time - start_time) > mtime:
                         # player who made the illegal move should be disqualified. This needs to be done manually.
                         print(
@@ -116,15 +122,22 @@ class Competition:
 # When the students submit a player file, they should be entered one by one.
 game = gomoku.starting_state()
 
-player0 = random_dummy_player()
-player1 = gomoku_ai_marius1_webclient()
-player2 = gomoku_ai_random_webclient()
+player0 = random_test_player1(128)
+player1 = random_test_player(2)
+# player2 = random_test_player1
+
+
+# player0 = random_test_player1()
+# player1 = random_test_player2()
 
 comp = Competition()
+comp.register_player(player0)
 comp.register_player(player1)
-comp.register_player(player2)
+# comp.register_player(player2)
 
-nofCompetitions = 1
+nofCompetitions = 5
 for i in range(nofCompetitions):
+    print('\nplaying competition#No: ', i)
     comp.play_competition()
     comp.print_scores()
+    

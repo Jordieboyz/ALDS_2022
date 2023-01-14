@@ -111,7 +111,7 @@ from GmUtils import GmUtils
 from GmGameRules import GmGameRules
 from gomoku_ai_marius1_webclient import gomoku_ai_marius1_webclient
 from gomoku_ai_random_webclient import gomoku_ai_random_webclient
-from basePlayer import basePlayer
+from latest_gmPlayer import basePlayer
 from GmGame import GmGame
 from GmQuickTests import GmQuickTests
 
@@ -201,8 +201,8 @@ aiPlayer3 = gomoku_ai_random_webclient(True, GmGameRules.winningSeries, GmGameRu
 
 # uncomment the line below to test again yourself as human (player1 is black and starts the game)
 # GmGame.start(
-#     player2=aiPlayer1,
-#     player1=humanPlayer1,
+#     player1=aiPlayer1,
+#     player2=humanPlayer1,
 #     max_time_to_move=1000,
 #     showIntermediateMoves=True,
 # )  # don't speciry an aiPlayer for Human vs Human games

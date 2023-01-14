@@ -125,6 +125,15 @@ class GmUtils:
     def isValidMove(board, row, col):
         # Returns True if there is an empty space in the given column.
         # Otherwise returns False.
+        
+        debug = False
+        if debug:
+            print(board)
+            
+            print((row >= 0))
+            print((col >= 0))
+            print((col < len(board[0])))
+            print((board[row][col] == 0))
         return (
             (row >= 0)
             and (row < len(board))

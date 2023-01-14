@@ -1,0 +1,119 @@
+experimaent, best constant c
+
+do 5 tests: on 19x19
+first check teh same 2 - 2
+
+
+playing:  0
+
+0.0 0.0 [Jort de Boer (1764801), 0.0]
+2.0 0.0 [Jort de Boer (1764801) -> C: 2, 2.0]
+playing:  1
+
+0.0 2.0 [Jort de Boer (1764801), 2.0]
+0.0 0.0 [Jort de Boer (1764801) -> C: 2, 0.0]
+playing:  2
+
+0.0 1.0 [Jort de Boer (1764801), 1.0]
+1.0 0.0 [Jort de Boer (1764801) -> C: 2, 1.0]
+playing:  3
+
+0.0 1.0 [Jort de Boer (1764801), 1.0]
+1.0 0.0 [Jort de Boer (1764801) -> C: 2, 1.0]
+playing:  4
+
+0.0 1.0 [Jort de Boer (1764801), 1.0]
+1.0 0.0 [Jort de Boer (1764801) -> C: 2, 1.0]
+
+pretty much abouit even. these are the same agorithms, so the produce the same moves
+
+now: 2-10
+playing:  0
+
+0.0 0.0 [Jort de Boer (1764801), 0.0]
+2.0 0.0 [Jort de Boer (1764801) -> C: 10, 2.0]
+playing:  1
+
+0.0 0.0 [Jort de Boer (1764801), 0.0]
+2.0 0.0 [Jort de Boer (1764801) -> C: 10, 2.0]
+playing:  2
+
+0.0 1.0 [Jort de Boer (1764801), 1.0]
+1.0 0.0 [Jort de Boer (1764801) -> C: 10, 1.0]
+playing:  3
+
+0.0 1.0 [Jort de Boer (1764801), 1.0]
+1.0 0.0 [Jort de Boer (1764801) -> C: 10, 1.0]
+playing:  4
+
+0.0 1.0 [Jort de Boer (1764801), 1.0]
+1.0 0.0 [Jort de Boer (1764801) -> C: 10, 1.0]
+
+
+0.0 0.0 [Jort de Boer (1764801), 0.0]
+2.0 0.0 [Jort de Boer (1764801) -> C: 50, 2.0]
+playing:  1
+
+0.0 1.0 [Jort de Boer (1764801), 1.0]
+1.0 0.0 [Jort de Boer (1764801) -> C: 50, 1.0]
+playing:  2
+
+0.0 1.0 [Jort de Boer (1764801), 1.0]
+1.0 0.0 [Jort de Boer (1764801) -> C: 50, 1.0]
+playing:  3
+
+0.0 1.0 [Jort de Boer (1764801), 1.0]
+1.0 0.0 [Jort de Boer (1764801) -> C: 50, 1.0]
+playing:  4
+
+0.0 1.0 [Jort de Boer (1764801), 1.0]
+1.0 0.0 [Jort de Boer (1764801) -> C: 50, 1.0]
+
+
+complete randoms: 10-32
+
+playing:  0
+
+0.0 1.0 [Jort de Boer (1764801) -> C: 2, 1.0]
+1.0 0.0 [Jort de Boer (1764801) -> C: 10, 1.0]
+playing:  1
+
+0.0 2.0 [Jort de Boer (1764801) -> C: 2, 2.0]
+0.0 0.0 [Jort de Boer (1764801) -> C: 10, 0.0]
+playing:  2
+
+0.0 1.0 [Jort de Boer (1764801) -> C: 2, 1.0]
+1.0 0.0 [Jort de Boer (1764801) -> C: 10, 1.0]
+playing:  3
+
+0.0 1.0 [Jort de Boer (1764801) -> C: 2, 1.0]
+1.0 0.0 [Jort de Boer (1764801) -> C: 10, 1.0]
+playing:  4
+
+0.0 1.0 [Jort de Boer (1764801) -> C: 2, 1.0]
+1.0 0.0 [Jort de Boer (1764801) -> C: 10, 1.0]
+
+
+next randoms: 2-32
+
+playing:  0
+
+0.0 1.0 [Jort de Boer (1764801) -> C: 2, 1.0]
+1.0 0.0 [Jort de Boer (1764801) -> C: 32, 1.0]
+playing:  1
+
+0.0 1.0 [Jort de Boer (1764801) -> C: 2, 1.0]
+1.0 0.0 [Jort de Boer (1764801) -> C: 32, 1.0]
+playing:  2
+
+0.0 1.0 [Jort de Boer (1764801) -> C: 2, 1.0]
+1.0 0.0 [Jort de Boer (1764801) -> C: 32, 1.0]
+playing:  3
+
+0.0 2.0 [Jort de Boer (1764801) -> C: 2, 2.0]
+0.0 0.0 [Jort de Boer (1764801) -> C: 32, 0.0]
+playing:  4
+
+0.0 1.0 [Jort de Boer (1764801) -> C: 2, 1.0]
+1.0 0.0 [Jort de Boer (1764801) -> C: 32, 1.0]
+

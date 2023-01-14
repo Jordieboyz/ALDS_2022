@@ -1,31 +1,19 @@
-# Uitleg van de bestanden
-
-In deze folder staan een aantal bestanden voor de eindopracht Gomoku van ALDS, hieronder een uitleg van de bestanden.
-
-### Programmas
-Er zijn twee programma's in deze map `competition.py` en `gomoku_easy_test_environment.py`. De eerste kan je gebruiken om een comptetitie op te zetten tussen verschillende AI's en de tweede kan je gebruiken om jouw AI door een test suite te testen.
+# uitleg voor de must-haves
 
 
-### AI's
-De volgende bestanden zijn AI spelers waartegen je kan testen/spelen, je kan ze includen om tegen te testen in de competition / test environment
-```
-gomoku_ai_marius1_webclient.py
-gomoku_ai_random_webclient.py
-random_agent.py
-```
+# 1, works for both
+Ik creer een nieuwe root van elke 'move'aanroep. hierdoor hoef ik niet
+elke keer een nieuwe tree te maken, maar alleen een soort subset van het geheel en het voorkomt dat
+ik per ongeluk te ver terug in de tree ga. Ik exploit maar 1 linie van hchildren en vanuit die chuildren doe ik een random rollout.
+Het is dus niet echt een tree, maar een subset van een tree.
 
-### Libraries
-De volgende bestanden bevatten code voor de competition en test environment.
+# 2, works for both
+Door de 'star points' van het 19x19 board te nemen, creer je een territorium om makkelijk aan te kunnen vallen
+en verdedigen. ik heb mijn star points zo gekozen dat er een directe rij van 5 stenen kan worden gecreerd. zo maakn ik het mezelf
+dus makkelijk omdat ik meteen aanvallend speel.
 
-```
-basePlayer.py           -- Base class voor een gomoku speler
-gomoku.py               -- Logica voor het uitvoeren van een potje gomoku
-GmGame.py               -- Logica voor het visueel weergeven van een gomoku spel
-GmGameRules.py          -- Game logica en spelregels voor gomoku
-GmQuickTests.py         -- Tests die gebruikt worden om jouw AI te testen
-GmUtils.py              -- Utility functies voor AI's.py
-```
+#3
+TODO: constant c exploration value experiment
 
-### Utilities
-`gomoku_ai_random_webserver.py` bevat code voor het draaien van een gomoku webserver! Handig als je als docent je AI code niet wilt prijsgeven maar wel wilt meedoen in een competitie 😎
+adj moves, prevent whole board search, set around 800 loops to rollout w matrix of 2
 

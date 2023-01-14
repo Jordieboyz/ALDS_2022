@@ -33,4 +33,4 @@ class random_dummy_player:
 
     def id(self) -> str:
         """Please return a string here that uniquely identifies your submission e.g., "name (student_id)" """
-        return "Jort de Boer"
+        return "RANDOM DUMMY"
