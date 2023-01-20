@@ -2,12 +2,7 @@
 
 import gomoku
 from random_agent import random_dummy_player
-from gomoku_ai_marius1_webclient import gomoku_ai_marius1_webclient
-from gomoku_ai_random_webclient import gomoku_ai_random_webclient
-from latest_gmPlayer import basePlayer
-from random_test_1 import random_test_player1
-from random_test_2 import random_test_player2
-from testPlayer import testPlayer
+from gmPlayer_AI import gmPlayer_AI
 import random
 import time
 
@@ -73,7 +68,7 @@ class Competition:
                     )  # perform the move, and obtain whether the move was valid (ok) and whether the move results in a win
                     previous_move = move
                     # Uncomment the follwing two lines if you want to watch the games unfold slowly:
-                    # time.sleep(.1)
+                    # time.sleep(.5)
                     # gomoku.pretty_board(game[0])
                     # print()
                     if (stop_time - start_time) > mtime:
@@ -122,18 +117,14 @@ class Competition:
 # When the students submit a player file, they should be entered one by one.
 game = gomoku.starting_state()
 
-player0 = random_test_player1(128)
-player1 = random_test_player(2)
-# player2 = random_test_player1
+player0 = gmPlayer_AI()
+player1 = random_dummy_player()
 
-
-# player0 = random_test_player1()
-# player1 = random_test_player2()
 
 comp = Competition()
 comp.register_player(player0)
 comp.register_player(player1)
-# comp.register_player(player2)
+
 
 nofCompetitions = 5
 for i in range(nofCompetitions):
